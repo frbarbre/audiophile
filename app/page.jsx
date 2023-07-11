@@ -1,11 +1,10 @@
-import { products } from "./data"
+import FrontPage from "./components/FrontPage";
+import Categories from "./components/Categories";
 
 export default function Home() {
   return (
-    <main>
-      {products.map((product) => (
-        <h1>{product.name}</h1>
-      ))}
-    </main>
-  )
+    <div>
+      <FrontPage />
+    </div>
+  );
 }

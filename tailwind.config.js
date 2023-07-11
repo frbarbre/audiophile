@@ -1,18 +1,30 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    './pages/**/*.{js,ts,jsx,tsx,mdx}',
-    './components/**/*.{js,ts,jsx,tsx,mdx}',
-    './app/**/*.{js,ts,jsx,tsx,mdx}',
+    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+      colors: {
+        orange: "#D87D4A",
+        "near-black": "#101010",
+        "orange-pale": "#fbaf85",
+        grey: "#F1F1F1",
+        "dark-gray": "#4C4C4C",
       },
+      backgroundImage: {
+        "circle-pattern": "url('/home/desktop/pattern-circles.svg')",
+        "speaker-banner-mobile": "url('/home/mobile/image-speaker-zx7.jpg')",
+        "speaker-banner-tablet": "url('/home/tablet/image-speaker-zx7.jpg')",
+        "speaker-banner-desktop": "url('/home/desktop/image-speaker-zx7.jpg')",
+      },
+    },
+    screens: {
+      md: "728px",
+      lg: "1200px",
     },
   },
   plugins: [],
-}
+};
