@@ -3,8 +3,7 @@ import Link from "next/link";
 import Button from "./Button";
 
 export default function Hero() {
-
- const headphone = products[3];
+  const headphone = products[3];
 
   return (
     <div className="w-full relative h-full">
@@ -23,7 +22,7 @@ export default function Hero() {
         alt="HeroImage"
         className="w-full md:hidden lg:hidden max-h-[600px] object-cover"
       />
-      <div className="absolute inset-0 max-w-[1110px] mx-auto flex items-center object-center px-[39px] lg:px-8">
+      <div className="absolute inset-0 max-w-[1174px] mx-auto flex items-center object-center px-[39px] lg:px-8">
         <article className="w-full text-center lg:text-left">
           <h2 className="tracking-[10px] uppercase text-white text-[14px] pb-[16px] md:pb-[24px] opacity-50">
             New product
@@ -35,8 +34,14 @@ export default function Hero() {
             Experience natural, lifelike audio and exceptional build quality
             made for the passionate music enthusiast.
           </p>
-          <Link href={`/headphones/${headphone.slug}`} className="w-max mx-auto lg:mx-0 block">
-            <Button color={"bg-orange hover:bg-orange-pale text-white"} text={"See product"} />
+          <Link
+            href={`/headphones/${headphone.slug}`}
+            className="w-max mx-auto lg:mx-0 block"
+          >
+            <Button
+              color={"bg-orange hover:bg-orange-pale text-white"}
+              text={"See product"}
+            />
           </Link>
         </article>
       </div>

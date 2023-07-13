@@ -13,8 +13,8 @@ export default function ProductPage() {
   const productArray = products.find((product) => product.slug === productPath);
 
   return (
-    <div className="max-w-[1110px] mx-auto px-8">
-      <Product productArray={productArray} /> 
+    <div className="max-w-[1174px] mx-auto px-8">
+      <Product productArray={productArray} />
       <Categories />
       <Pitch />
     </div>

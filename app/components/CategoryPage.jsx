@@ -28,7 +28,7 @@ export default function CategoryPage() {
   return (
     <div>
       <Top pathname={pathname} />
-      <div className="max-w-[1110px] mx-auto px-8">
+      <div className="max-w-[1174px] mx-auto px-8">
         <Products categoryArray={categoryArray} pathname={pathname} />
         <Categories />
         <Pitch />

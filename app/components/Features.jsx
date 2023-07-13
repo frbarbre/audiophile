@@ -13,11 +13,11 @@ export default function Features({ productArray }) {
         <h2 className="text-[24px] leading-[36px] tracking-[0.86px] font-bold pb-[24px] uppercase md:pb-[32px] md:text-[32px] md:tracking-[1.14px] md:flex-1 lg:flex-none">
           In the box
         </h2>
-        <ul className="md:flex-1 lg:flex-none">
+        <ul className="md:flex-1 lg:flex-none gap-[8px] flex flex-col">
           {productArray.includedItems.map((item) => (
-            <li key={nanoid()} className="flex">
-              <p>{item.quantity}</p>
-              <p>{item.item}</p>
+            <li key={nanoid()} className="flex gap-[21px] md:gap-[24px]">
+              <p className="w-[18px] font-bold text-orange text-[15px] leading-[25px]">{item.quantity}x</p>
+              <p className="font-medium opacity-50 text-[15px] leading-[25px]">{item.item}</p>
             </li>
           ))}
         </ul>

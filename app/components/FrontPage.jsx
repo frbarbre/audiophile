@@ -9,7 +9,7 @@ export default function FrontPage() {
   return (
     <main>
       <Hero />
-      <div className="max-w-[1110px] mx-auto px-6">
+      <div className="max-w-[1174px] mx-auto px-6">
         <Categories />
         <SpeakerPromo />
         <SpeakerBanner />

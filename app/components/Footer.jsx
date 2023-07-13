@@ -1,17 +1,26 @@
+"use client";
+
 import { navLinks, socials } from "../constants";
 import Link from "next/link";
 import { nanoid } from "nanoid";
+import { usePathname } from "next/navigation";
 
 export default function Footer() {
+  const pathname = usePathname();
+
+  const pathSplit = pathname.split("/") 
+  const categoryPath = "/" + pathSplit[1]
   return (
     <footer className="bg-near-black">
-      <div className="max-w-[1110px] mx-auto px-8 relative pt-[52px] md:pt-[60px] lg:pt-[75px] pb-[38px] md:pb-[46px] lg:pb-[48px]">
+      <div className="max-w-[1174px] mx-auto px-8 relative pt-[52px] md:pt-[60px] lg:pt-[75px] pb-[38px] md:pb-[46px] lg:pb-[48px]">
         <article className="flex flex-col lg:flex-row lg:justify-between items-center md:items-start">
           <img src="/shared/desktop/logo.svg" alt="logo" />
           <div className="flex gap-[16px] flex-col md:flex-row md:gap-[34px] text-center md:text-left py-[48px] md:py-[32px] lg:pt-0 lg:pb-[36px]">
             {navLinks.map((link) => (
               <Link key={nanoid()} href={link.path}>
-                <h2 className="text-white uppercase text-[13px] tracking-[2px] leading-[25px] font-bold hover:text-orange transition-all">
+                <h2 className={`uppercase text-[13px] tracking-[2px] leading-[25px] font-bold hover:text-orange transition-all ${
+                categoryPath === link.path ? "text-orange" : "text-white"
+              } ${pathname === link.path ? "cursor-default" : "cursor-pointer"}`}>
                   {link.title}
                 </h2>
               </Link>

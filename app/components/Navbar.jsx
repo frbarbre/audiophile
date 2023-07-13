@@ -1,4 +1,5 @@
 "use client";
+
 import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
@@ -12,12 +13,14 @@ export default function Navbar() {
   const [menu, setMenu] = useState(false);
   const [openCart, setOpenCart] = useState(false);
   const pathname = usePathname();
-  console.log(pathname);
+
+  const pathSplit = pathname.split("/") 
+  const categoryPath = "/" + pathSplit[1]
 
   return (
     <div className={`lg:px-0 ${pathname === "/" ? "" : "bg-black"}`}>
       <div
-        className={`flex justify-between items-center px-[30px] py-8 md:max-w-[1110px] md:mx-auto z-50 relative ${
+        className={`flex justify-between items-center px-[30px] py-8 md:max-w-[1174px] md:mx-auto z-50 relative ${
           menu ? "bg-black lg:bg-transparent" : ""
         }`}
       >
@@ -48,8 +51,8 @@ export default function Navbar() {
               key={nanoid()}
               href={link.path}
               className={`font-bold hover:text-orange transition-all ${
-                pathname === link.path ? "text-orange cursor-default" : ""
-              }`}
+                categoryPath === link.path ? "text-orange" : ""
+              } ${pathname === link.path ? "cursor-default" : "cursor-pointer"}`}
             >
               {link.title}
             </Link>
@@ -78,7 +81,7 @@ export default function Navbar() {
           <div className="fixed inset-0 bg-black opacity-40 z-20"></div>
         </div>
       )}
-      <div className="relative max-w-[1110px] mx-auto">
+      <div className="relative max-w-[1174px] mx-auto">
         {openCart && (
           <div className="px-6 mt-[24px] absolute md:w-[377px] md:right-14 w-full">
             <Cart openCart={openCart} setOpenCart={setOpenCart} />
