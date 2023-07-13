@@ -13,6 +13,8 @@ module.exports = {
         "orange-pale": "#fbaf85",
         grey: "#F1F1F1",
         "dark-gray": "#4C4C4C",
+        "li-gray": "#FAFAFA",
+        red: "#CD2C2C",
       },
       backgroundImage: {
         "circle-pattern": "url('/home/desktop/pattern-circles.svg')",
@@ -22,7 +24,7 @@ module.exports = {
       },
     },
     screens: {
-      md: "728px",
+      md: "768px",
       lg: "1200px",
     },
   },

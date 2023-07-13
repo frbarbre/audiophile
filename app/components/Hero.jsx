@@ -23,9 +23,9 @@ export default function Hero() {
         alt="HeroImage"
         className="w-full md:hidden lg:hidden max-h-[600px] object-cover"
       />
-      <div className="absolute inset-0 max-w-[1110px] mx-auto flex items-center object-center px-[39px] lg:px-0">
+      <div className="absolute inset-0 max-w-[1110px] mx-auto flex items-center object-center px-[39px] lg:px-8">
         <article className="w-full text-center lg:text-left">
-          <h2 className="tracking-[10px] uppercase text-white text-[14px] pb-[16px] md:pb-[24px] ">
+          <h2 className="tracking-[10px] uppercase text-white text-[14px] pb-[16px] md:pb-[24px] opacity-50">
             New product
           </h2>
           <h1 className="font-bold text-white text-[36px] uppercase max-w-[328px] md:max-w-[396px] lg:max-w-[396px] md:text-[56px] lg:text-[56px] mx-auto lg:mx-0 pb-[24px]">

@@ -2,6 +2,8 @@ import Hero from "./Hero";
 import Categories from "./Categories";
 import SpeakerPromo from "./SpeakerPromo";
 import SpeakerBanner from "./SpeakerBanner";
+import EarbudPromo from "./EarbudPromo";
+import Pitch from "./Pitch";
 
 export default function FrontPage() {
   return (
@@ -11,6 +13,8 @@ export default function FrontPage() {
         <Categories />
         <SpeakerPromo />
         <SpeakerBanner />
+        <EarbudPromo />
+        <Pitch />
       </div>
     </main>
   );

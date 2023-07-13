@@ -5,6 +5,7 @@ import { Manrope } from "next/font/google";
 import Navbar from "./components/Navbar";
 import { usePathname } from "next/navigation";
 import Cart from "./components/Cart";
+import Footer from "./components/Footer";
 
 const manrope = Manrope({ subsets: ["latin"] });
 
@@ -22,7 +23,7 @@ export default function RootLayout({ children }) {
           <Navbar />
         </div>
         {children}
-        <Cart />
+        <Footer />
       </body>
     </html>
   );
