@@ -11,7 +11,7 @@ export default function Footer() {
   const pathSplit = pathname.split("/") 
   const categoryPath = "/" + pathSplit[1]
   return (
-    <footer className="bg-near-black">
+    <footer className="bg-near-black relative z-0">
       <div className="max-w-[1174px] mx-auto px-8 relative pt-[52px] md:pt-[60px] lg:pt-[75px] pb-[38px] md:pb-[46px] lg:pb-[48px]">
         <article className="flex flex-col lg:flex-row lg:justify-between items-center md:items-start">
           <img src="/shared/desktop/logo.svg" alt="logo" />

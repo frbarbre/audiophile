@@ -18,7 +18,7 @@ export default function CartItem({ product }) {
         />
         <div className="font-bold">
           <p className="">{product.shortName}</p>
-          <p className="opacity-50">${product.price.toLocaleString()}</p>
+          <p className="opacity-50">$ {product.price.toLocaleString()}</p>
         </div>
       </div>
       <div className="flex min-w-[96px] h-[40px] bg-grey items-center justify-around">

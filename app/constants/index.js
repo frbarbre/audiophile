@@ -51,7 +51,7 @@ export const billingDetails = [
     type: "text",
     errorMessage: "plz fill out",
     label: "Name",
-    required: true,
+    required: false,
     requirements: "",
   },
   {
@@ -60,7 +60,7 @@ export const billingDetails = [
     type: "email",
     errorMessage: "Wrong format",
     label: "Email",
-    required: true,
+    required: false,
     requirements: "@",
   },
   {
@@ -69,7 +69,7 @@ export const billingDetails = [
     type: "text",
     errorMessage: "plz fill out",
     label: "Phone Number",
-    required: true,
+    required: false,
     requirements: "",
   },
 ];
@@ -81,7 +81,7 @@ export const shippingInfo = [
     type: "text",
     errorMessage: "plz fill out",
     label: "Username",
-    required: true,
+    required: false,
     requirements: "",
   },
   {
@@ -90,7 +90,7 @@ export const shippingInfo = [
     type: "text",
     errorMessage: "plz fill out",
     label: "Username",
-    required: true,
+    required: false,
     requirements: "",
   },
   {
@@ -99,7 +99,7 @@ export const shippingInfo = [
     type: "text",
     errorMessage: "plz fill out",
     label: "Username",
-    required: true,
+    required: false,
     requirements: "",
   },
   {
@@ -108,7 +108,39 @@ export const shippingInfo = [
     type: "text",
     errorMessage: "plz fill out",
     label: "Username",
-    required: true,
+    required: false,
     requirements: "",
   },
 ];
+
+export const eMoney = [
+  {
+    name: "e-money Number",
+    placeholder: "238521993",
+    type: "text",
+    errorMessage: "plz fill out",
+    label: "Username",
+    required: false,
+    requirements: "",
+  },
+  {
+    name: "e-money PIN",
+    placeholder: "6891",
+    type: "text",
+    errorMessage: "plz fill out",
+    label: "Username",
+    required: false,
+    requirements: "",
+  },
+];
+
+export const radioButtons = [
+  {
+    name: "e-Money",
+    id: "emoney"
+  },
+  {
+    name: "Cash on Delivery",
+    id: "cash"
+  }
+]

@@ -15,6 +15,7 @@ module.exports = {
         "dark-gray": "#4C4C4C",
         "li-gray": "#FAFAFA",
         red: "#CD2C2C",
+        "black-opaque": "rgba(0,0,0,0.4)",
       },
       backgroundImage: {
         "circle-pattern": "url('/home/desktop/pattern-circles.svg')",
