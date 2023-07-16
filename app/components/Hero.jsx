@@ -22,7 +22,7 @@ export default function Hero() {
         alt="HeroImage"
         className="w-full md:hidden lg:hidden max-h-[600px] object-cover"
       />
-      <div className="absolute inset-0 max-w-[1174px] mx-auto flex items-center object-center px-[39px] lg:px-8">
+      <div className="absolute inset-0 max-w-[1174px] mx-auto flex items-center object-center px-[39px] lg:px-8 lg:pt-[89px]">
         <article className="w-full text-center lg:text-left">
           <h2 className="tracking-[10px] uppercase text-white text-[14px] pb-[16px] md:pb-[24px] opacity-50">
             New product
