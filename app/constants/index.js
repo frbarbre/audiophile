@@ -1,15 +1,15 @@
 export const categories = [
   {
-    title: "office",
-    image: "/starter/starter-gallery-1.png",
+    title: "headphones",
+    image: "/shared/desktop/image-headphones.png",
   },
   {
-    title: "gaming",
-    image: "/beast/beast-gallery-1.png",
+    title: "speakers",
+    image: "/shared/desktop/image-speakers.png",
   },
   {
-    title: "enterprise",
-    image: "/enterprise/enterprise-gallery-1.png",
+    title: "earphones",
+    image: "/shared/desktop/image-earphones.png",
   },
 ];
 
@@ -19,16 +19,16 @@ export const navLinks = [
     path: "/",
   },
   {
-    title: "office",
-    path: "/office",
+    title: "headphones",
+    path: "/headphones",
   },
   {
-    title: "gaming",
-    path: "/gaming",
+    title: "speakers",
+    path: "/speakers",
   },
   {
-    title: "enterprise",
-    path: "/enterprise",
+    title: "earphones",
+    path: "/earphones",
   },
 ];
 
@@ -137,10 +137,10 @@ export const eMoney = [
 export const radioButtons = [
   {
     name: "e-Money",
-    id: "emoney",
+    id: "emoney"
   },
   {
     name: "Cash on Delivery",
-    id: "cash",
-  },
-];
+    id: "cash"
+  }
+]

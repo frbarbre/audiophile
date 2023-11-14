@@ -30,7 +30,7 @@ export default function Cart({ openCart, setOpenCart }) {
           <h2 className="font-bold text-[18px] ">CART ({totalItems}) </h2>
           {cart && cart.length ? (
             <button
-              className="font-medium opacity-50 underline underline-offset-1 text-[15px] hover:text-primary hover:opacity-100"
+              className="font-medium opacity-50 underline underline-offset-1 text-[15px] hover:text-orange hover:opacity-100"
               onClick={emptyCart}
             >
               Remove all
@@ -70,7 +70,7 @@ export default function Cart({ openCart, setOpenCart }) {
             <Link href="/checkout" onClick={() => setOpenCart(!openCart)}>
               <Button
                 text="CHECKOUT"
-                color="bg-grad hover:bg-grad-pale w-full text-white"
+                color="bg-orange hover:bg-orange-pale w-full text-white"
               />
             </Link>
           ) : (

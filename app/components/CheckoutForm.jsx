@@ -23,7 +23,7 @@ export default function CheckoutForm() {
         <h2 className="font-bold pt-[24px] md:pt-[30px] lg:pt-[58px] text-[28px]">
           CHECKOUT
         </h2>
-        <p className="text-primary font-bold mt-[32px] md:mt-[41px] mb-[16px]">
+        <p className="text-orange font-bold mt-[32px] md:mt-[41px] mb-[16px]">
           BILLING DETAILS
         </p>
         <div className="flex flex-wrap gap-x-[16px] gap-y-[17px]">
@@ -40,7 +40,7 @@ export default function CheckoutForm() {
             </div>
           ))}
         </div>
-        <p className="text-primary font-bold md:mt-[53px] mt-[32px] mb-[16px]">
+        <p className="text-orange font-bold md:mt-[53px] mt-[32px] mb-[16px]">
           SHIPPING INFO
         </p>
         <div className="flex flex-wrap gap-x-[16px] gap-y-[24px]">
@@ -57,7 +57,7 @@ export default function CheckoutForm() {
           ))}
         </div>
 
-        <p className="text-primary font-bold md:mt-[53px] mt-[32px] mb-[16px]">
+        <p className="text-orange font-bold md:mt-[53px] mt-[32px] mb-[16px]">
           PAYMENT DETAILS
         </p>
         <div className="flex flex-col md:flex-row md:justify-between max-w-[634px]">

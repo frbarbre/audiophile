@@ -27,7 +27,7 @@ export default function CheckoutSummary() {
       maximumFractionDigits: 0,
     });
 
-    shipping = totalPrice === 0 ? 0 : 50;
+    shipping = totalPrice === 0 ? 0 : 50
 
     allIncluded = totalPrice + shipping;
   }
@@ -67,7 +67,7 @@ export default function CheckoutSummary() {
           <h2 className="uppercase opacity-50 leading-[25px] text-[15px] font-medium">
             Grand total
           </h2>
-          <h3 className="text-[18px] font-bold text-primary">
+          <h3 className="text-[18px] font-bold text-orange">
             $ {allIncluded.toLocaleString()}
           </h3>
         </div>
@@ -81,7 +81,7 @@ export default function CheckoutSummary() {
         <div onClick={() => setSucces(true)}>
           <Button
             text={"continue & pay"}
-            color={"w-full bg-grad hover:bg-grad-pale text-white"}
+            color={"w-full bg-orange hover:bg-orange-pale text-white"}
           />
         </div>
       )}

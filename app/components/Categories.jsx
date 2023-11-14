@@ -1,6 +1,7 @@
 "use client";
 
 import { categories } from "../constants";
+import { usePathname } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
 import { nanoid } from "nanoid";
@@ -25,7 +26,7 @@ export default function Categories() {
               {category.title}
             </p>
             <div className="flex justify-center items-center mt-[20px]">
-              <p className="transition-all hover:text-primary mr-[10px] text-[13px] font-bold">
+              <p className="transition-all hover:text-orange mr-[10px] text-[13px] font-bold">
                 SHOP
               </p>
               <Image

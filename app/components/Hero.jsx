@@ -6,11 +6,21 @@ export default function Hero() {
   const headphone = products[3];
 
   return (
-    <div className="w-full relative h-full bg-black">
+    <div className="w-full relative h-full">
       <img
-        src={"/home/hero.png"}
+        src={"/home/desktop/image-hero.jpg"}
         alt="HeroImage"
-        className="w-full h-[729px] object-cover object-center"
+        className="w-full hidden lg:block max-h-[729px] object-cover object-center"
+      />
+      <img
+        src={"/home/tablet/image-hero.jpg"}
+        alt="HeroImage"
+        className="w-full hidden md:block lg:hidden max-h-[729px] object-cover object-center"
+      />
+      <img
+        src={"/home/mobile/image-hero.jpg"}
+        alt="HeroImage"
+        className="w-full md:hidden lg:hidden max-h-[600px] object-cover"
       />
       <div className="absolute inset-0 max-w-[1174px] mx-auto flex items-center object-center px-[39px] lg:px-8 lg:pt-[89px]">
         <article className="w-full text-center lg:text-left">
@@ -29,7 +39,7 @@ export default function Hero() {
             className="w-max mx-auto lg:mx-0 block"
           >
             <Button
-              color={"bg-grad hover:bg-grad-pale text-white"}
+              color={"bg-orange hover:bg-orange-pale text-white"}
               text={"See product"}
             />
           </Link>
