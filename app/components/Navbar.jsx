@@ -68,8 +68,8 @@ export default function Navbar() {
               <Link
                 key={nanoid()}
                 href={link.path}
-                className={`font-bold hover:text-orange transition-all ${
-                  categoryPath === link.path ? "text-orange" : ""
+                className={`font-bold hover:text-primary transition-all ${
+                  categoryPath === link.path ? "text-primary" : ""
                 } ${
                   pathname === link.path ? "cursor-default" : "cursor-pointer"
                 }`}
@@ -91,7 +91,7 @@ export default function Navbar() {
               }}
             />
             {totalItems !== 0 && (
-              <div className="absolute top-[-12px] right-[-10px] bg-orange text-white aspect-square rounded-full w-[16px] h-[16px] flex items-center justify-center">
+              <div className="absolute top-[-12px] right-[-10px] bg-grad text-white aspect-square rounded-full w-[16px] h-[16px] flex items-center justify-center">
                 <p className="text-[10px] font-medium">{totalItems}</p>
               </div>
             )}

@@ -34,11 +34,11 @@ export default function Input({ text, type, errorMessage, require, name }) {
         >
           {name}
         </label>
-        {error && <p className="text-red text-[12px] font-medium tracking-[-0.21px] mb-[9px]">{errorMessage}</p>}
+        {error && <p className="text-error text-[12px] font-medium tracking-[-0.21px] mb-[9px]">{errorMessage}</p>}
       </div>
       <input
         className={`${
-          error ? "ring-red" : "ring-[#CFCFCF]"
+          error ? "ring-error" : "ring-[#CFCFCF]"
         } ring-[#CFCFCF] font-bold text-[14px] w-full h-[56px] pl-[20px] outline-none ring-[1px] rounded-lg p-[10px]`}
         type={type}
         placeholder={text}

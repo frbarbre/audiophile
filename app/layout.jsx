@@ -16,7 +16,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        <title>Audiophile</title>
+        <title>Quantum</title>
       </head>
       <body className={`${manrope.className}`}>
         <div className={`${pathname === "/" ? "absolute top-0 left-0 right-0 z-20" : ""}`}>

@@ -39,7 +39,7 @@ export default function SuccesBanner() {
   }
 
   return (
-    <div className="fixed inset-0 flex items-center justify-center bg-black-opaque z-20">
+    <div className="fixed inset-0 flex items-center justify-center bg-black/40 z-20">
       <div className="bg-white max-w-[540px] w-full mx-6 p-8 md:p-12 rounded-[8px] relative z-50">
         <Image
           width={64}
@@ -130,7 +130,7 @@ export default function SuccesBanner() {
           <Link href={"/"} onClick={handleClick}>
             <Button
               text={"back to home"}
-              color={"w-full bg-orange hover:bg-orange-pale text-white"}
+              color={"w-full bg-grad hover:bg-grad-pale text-white"}
             />
           </Link>
         </div>

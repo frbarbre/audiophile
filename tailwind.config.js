@@ -8,20 +8,21 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        orange: "#D87D4A",
+        primary: "#03B2CA",
+        secondary: "#0361CA",
         "near-black": "#101010",
-        "orange-pale": "#fbaf85",
+        "primary-pale": "#fbaf85",
         grey: "#F1F1F1",
         "dark-gray": "#4C4C4C",
         "li-gray": "#FAFAFA",
-        red: "#CD2C2C",
-        "black-opaque": "rgba(0,0,0,0.4)",
+        error: "#CD2C2C",
       },
       backgroundImage: {
+        grad: "linear-gradient(95deg, #03B2CA 0%, #0361CA 100%)",
+        "grad-pale":
+          "linear-gradient(95deg, rgba(3, 178, 202, 0.80) 0%, rgba(3, 95, 202, 0.80) 100%)",
         "circle-pattern": "url('/home/desktop/pattern-circles.svg')",
-        "speaker-banner-mobile": "url('/home/mobile/image-speaker-zx7.jpg')",
-        "speaker-banner-tablet": "url('/home/tablet/image-speaker-zx7.jpg')",
-        "speaker-banner-desktop": "url('/home/desktop/image-speaker-zx7.jpg')",
+        "speaker-banner-desktop": "url('/home/beast-promo.png')",
       },
     },
     screens: {
